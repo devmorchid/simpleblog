@@ -19,6 +19,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* === البطاقة الفردية === */

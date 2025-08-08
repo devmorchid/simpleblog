@@ -12,8 +12,7 @@ function App() {
       <div className="App">
         <Navbar />
          
-        <h1>تجربة المكونات</h1>
-        
+      
         <Routes>
           <Route path="/" element={<ArticleList />} />
           <Route path="/article" element={<ArticleDetail />} />

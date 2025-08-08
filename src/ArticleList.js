@@ -33,7 +33,7 @@ function ArticleList() {
 
   return (
     <div className="app-container">
-      <h1>📰 آخر أخبار تيسلا</h1>
+      <h1> Derniers Articles   </h1>
 
       <div className="articles-grid">
         {currentArticles.map((article, index) => (

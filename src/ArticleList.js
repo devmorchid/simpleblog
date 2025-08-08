@@ -43,7 +43,7 @@ function ArticleList() {
               {/* ✅ تمييز مقالات المستخدم */}
               {article.source?.name === undefined && (
                 <span style={{ color: "green", fontSize: "0.8rem" }}>
-                  {" "}• من مقالاتك
+                  {" "}• De vos articles
                 </span>
               )}
             </h2>
@@ -58,7 +58,7 @@ function ArticleList() {
             <p className="article-description">{article.description}</p>
 
             <Link to="/article" state={{ article }} className="article-link">
-              اقرأ المزيد →
+             Lire la suite →
             </Link>
           </div>
         ))}

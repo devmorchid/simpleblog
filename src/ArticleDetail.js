@@ -10,7 +10,7 @@ function ArticleDetail() {
     return (
       <div className="detail-container">
         <h2>❌Créer un nouvel article</h2>
-        <Link to="/" className="back-link">← رجوع إلى الصفحة الرئيسية</Link>
+        <Link to="/" className="back-link">← Retour à la page d'accueil</Link>
       </div>
     );
   }
@@ -22,16 +22,9 @@ function ArticleDetail() {
         <img src={article.urlToImage} alt="Article" className="detail-image" />
       )}
       <p className="detail-content">{article.content || article.description}</p>
-      <a
-        href={article.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="source-link"
-      >
-        ⤴ المصدر الرسمي
-      </a>
+    
       <br />
-      <Link to="/" className="back-link">← رجوع إلى القائمة</Link>
+      <Link to="/" className="back-link">← Retour à la liste</Link>
     </div>
   );
 }

@@ -18,11 +18,14 @@
   font-weight: 700;
   color: #00d4ff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-display: flex;
-
+  display: flex;
+  margin-top: 0px;
+  justify-items: center;
 
 }
-
+span{
+  margin-top: 10px;
+}
 /* Links container */
 .lnk {
   display: flex;

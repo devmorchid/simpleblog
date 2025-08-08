@@ -21,22 +21,22 @@ function NewArticleForm() {
       publishedAt: new Date().toISOString(),
     };
 
-    // 🟢 حفظ المقال في localStorage
+    // 🟢 Sauvegarder l'article dans le localStorage
     const existingArticles = JSON.parse(localStorage.getItem("userArticles")) || [];
     const updatedArticles = [newArticle, ...existingArticles];
     localStorage.setItem("userArticles", JSON.stringify(updatedArticles));
 
-    // 🔁 الرجوع إلى الصفحة الرئيسية
+    // 🔁 Retourner à la page d'accueil
     navigate("/");
   };
 
   return (
     <div className="form-container">
-      <h2>✍️ إنشاء مقال جديد</h2>
+      <h2>✍️ Créer un nouvel article </h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="عنوان المقال"
+          placeholder="Titre de l'article"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
@@ -44,14 +44,14 @@ function NewArticleForm() {
 
         <input
           type="text"
-          placeholder="وصف مختصر"
+          placeholder="Brève description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
 
         <textarea
-          placeholder="المحتوى الكامل للمقال"
+          placeholder="Contenu complet de l'article"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows="6"
@@ -60,12 +60,12 @@ function NewArticleForm() {
 
         <input
           type="text"
-          placeholder="رابط الصورة (اختياري)"
+          placeholder="Lien de l'image (optionnel)"
           value={imageUrl}
           onChange={(e) => setImageUrl(e.target.value)}
         />
 
-        <button type="submit">نشر المقال</button>
+        <button type="submit">Publier l'article</button>
       </form>
     </div>
   );

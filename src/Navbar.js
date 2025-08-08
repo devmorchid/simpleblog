@@ -37,7 +37,7 @@ function Navbar() {
       
         <div className="logo">
               <img src='../SimpleBlog.png' alt="Logo du site"  />
-             SimpleBlog
+             <span>SimpleBlog</span>
         </div>
         
         <div className="lnk">

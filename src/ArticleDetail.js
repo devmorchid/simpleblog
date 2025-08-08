@@ -9,7 +9,7 @@ function ArticleDetail() {
   if (!article) {
     return (
       <div className="detail-container">
-        <h2>المقال غير متوفر ❌</h2>
+        <h2>❌Créer un nouvel article</h2>
         <Link to="/" className="back-link">← رجوع إلى الصفحة الرئيسية</Link>
       </div>
     );

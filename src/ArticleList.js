@@ -10,7 +10,7 @@ function ArticleList() {
   useEffect(() => {
     const userArticles = JSON.parse(localStorage.getItem("userArticles")) || [];
 
-    fetch("https://newsapi.org/v2/everything?q=tesla&from=2025-07-07&sortBy=publishedAt&apiKey=8debf03cdbd54a6a8f4ce43a0178c149")
+    fetch("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8debf03cdbd54a6a8f4ce43a0178c149")
       .then((res) => res.json())
       .then((data) => {
         const apiArticles = data.articles || [];
